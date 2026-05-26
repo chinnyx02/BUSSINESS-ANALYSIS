@@ -61,21 +61,6 @@ campaign_performance
 
 ---
 
-# Dataset Structure
-
-| Column Name | Data Type | Description |
-|-------------|-----------|-------------|
-| id | INT | Unique identifier |
-| campaign | VARCHAR(50) | Campaign name |
-| channel | VARCHAR(50) | Marketing platform |
-| spend | DECIMAL(12,2) | Advertising spend |
-| impressions | INT | Number of ad impressions |
-| clicks | INT | Number of user clicks |
-| conversions | INT | Number of successful conversions |
-| revenue | DECIMAL(12,2) | Revenue generated |
-| campaign_date | DATE | Campaign date |
-
----
 
 # Campaigns Included
 - Summer25
@@ -104,41 +89,6 @@ campaign_performance
 
 ---
 
-# Sample SQL Queries
-
-## Revenue by Campaign
-```sql
-SELECT
-    campaign,
-    SUM(revenue) AS total_revenue
-FROM campaign_performance
-GROUP BY campaign;
-```
-
-## ROI Analysis
-```sql
-SELECT
-    campaign,
-    SUM(spend) AS total_spend,
-    SUM(revenue) AS total_revenue,
-    ROUND(((SUM(revenue) - SUM(spend)) / SUM(spend)) * 100, 2) AS ROI_Percentage
-FROM campaign_performance
-GROUP BY campaign;
-```
-
-## Conversion Rate Analysis
-```sql
-SELECT
-    channel,
-    SUM(clicks) AS total_clicks,
-    SUM(conversions) AS total_conversions,
-    ROUND((SUM(conversions) / SUM(clicks)) * 100, 2) AS conversion_rate
-FROM campaign_performance
-GROUP BY channel;
-```
-
----
-
 # Business Insights
 This project helps businesses:
 - Measure campaign effectiveness
@@ -149,24 +99,7 @@ This project helps businesses:
 
 ---
 
-# How to Run the Project
-
-## Step 1
-Install MySQL or any SQL database software.
-
-## Step 2
-Open MySQL Workbench or your preferred SQL editor.
-
-## Step 3
-Run the `campaign_performance.sql` script.
-
-## Step 4
-Execute the analysis queries to generate business insights.
-
----
-
-# Repository Topics
-marketing-analysis sql mysql data-analysis business-intelligence campaign-analysis roi-analysis conversion-rate digital-marketing analytics portfolio-project
+project
 
 ---
 
