@@ -36,21 +36,7 @@ This project demonstrates how SQL can be used for:
 Synthetic Marketing Campaign Dataset
 
 ## Source
-This dataset was manually created for educational, portfolio, and SQL practice purposes.
-
-You may state:
-
-> “This dataset was generated manually for marketing analytics and portfolio demonstration purposes.”
-
----
-
-# Database Name
-Marketing_Campaign_DB
-
----
-
-# Table Name
-campaign_performance
+“This dataset was generated manually for marketing analytics and portfolio demonstration purposes.”
 
 ---
 
